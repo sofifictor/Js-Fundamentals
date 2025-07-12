@@ -1,10 +1,16 @@
-// 1-multi_languages.js
-const args = process.argv.slice(2);
+#!/usr/bin/node
 
-if (args.length === 0) {
-    console.log("0 arguments");
-} else if (args.length === 1) {
-    console.log("1 argument");
-} else if (args.length ===3) {
-    console.log("3 arguments");
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+
+if (arg1 === undefined) {
+    console.log('No argument');
+} else if (arg2 === undefined) {
+    console.log(arg1);
+} else {
+    console.log(`${arg1} ${arg2}`);
 }
+
+
+
+

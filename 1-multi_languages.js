@@ -1,13 +1,16 @@
-<<<<<<< HEAD
-const args = process.argv.slice(2);
+#!/usr/bin/node
 
-if (args.length === 0) {
-    console.log("No arguments");
-} else if (args.length === 1) {
-    console.log("Argument found");
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+
+if (arg1 === undefined) {
+    console.log('No argument');
+} else if (arg2 === undefined) {
+    console.log(arg1);
 } else {
-    console.log("Arguments found");
+    console.log(`${arg1} ${arg2}`);
 }
-=======
-console.log("C is fun"); console.log("Python is cool"); console.log("JavaScript is amazing");
->>>>>>> b97fbd1465d65381aa099db5816c5c91610ac90f
+
+
+
+

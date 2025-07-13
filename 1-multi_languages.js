@@ -10,7 +10,8 @@ if (arg1 === undefined) {
 } else {
     console.log(`${arg1} ${arg2}`);
 }
-
-
+console.log("C is fun");
+console.log("Python is cool");
+console.log("JavaScript is amazing");
 
 
